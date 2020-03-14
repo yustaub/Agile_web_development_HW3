@@ -11,7 +11,7 @@ cardsWhite = np.array([('w', 'w', 0)] * 5, dtype=cardType)
 CardValues="23456789TJQKA"
 order_black = [0, 0, 0, 0, 0]
 order_white = [0, 0, 0, 0, 0]
-#把讀入的字符串設置到數組中
+#把读入的字符串设置到數組中
 def InitCards():
     for i in range(5):
         cardsBlack[i]['name']=str[3*i]
@@ -421,7 +421,7 @@ if __name__=='__main__':
     print('白牌:%s' % cardsWhite)
     print('黑牌%s' % cardsBlack)
     if(str):
-        InitCards() #把讀入的字符串設置到數組中
+        InitCards() #把读入的字符串设置到数组中
         Sortcard() #将两副牌都排好序
         #分别得到黑牌白牌的等级
         level_black=get_black_level()
